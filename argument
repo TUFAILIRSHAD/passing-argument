@@ -1,0 +1,41 @@
+
+//#include<conio.h>
+class student
+{
+	int sub1;
+	int sub2;
+	int sub3;
+   public:
+   	void getdata(int x,int y,int z);
+   	void disp();
+   	void sum(student p,student q);
+   
+};
+void student :: getdata(int x,int y,int z)
+
+{
+	sub1=x;
+	sub2=y;
+	sub3=z;
+	
+}
+void student::disp()
+{
+cout<<"marks in\nsub1="<<sub1<<"\nsub2="<<sub2<<"\nsub3="sub3;
+}
+void student :: sum (student p,student q)
+{
+	sub1=p.sub1+q.sub1;
+	sub2=p.sub2+q.sub2;
+	sub3=p.sub3+q.sub3;
+}
+void main()
+{
+	studentr A;
+	A.student(20,30,35);
+	student B;
+	B.getdata(40,35,28);
+	c.sum(A,B);
+	c.disp();
+	getch();
+}
